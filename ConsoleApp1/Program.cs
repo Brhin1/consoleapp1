@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,17 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting .... ");
+            Program App = new Program();
+
+            MessageBox.Show("Message", "Title", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
         }
-    }
-}
+
+        public Program()
+        {
+            Console.WriteLine("in constructor and outside static context ");
+        }
+
+
+    }}
